@@ -1,0 +1,832 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+  position: sticky;
+  top:10px;
+}
+li#logo img{
+    width: 5%;
+    height: 5%;
+    border-radius: 20px;
+    float: left;
+    margin-right:10%;
+    
+}
+ul {
+  
+  list-style-type: none;
+  margin: 20px;
+  padding: 10px;
+  overflow: hidden;
+  border-style: outset;
+  border-color: white;
+  border-radius: 40px;
+}
+li.navigation a{
+  float: left;
+  
+}
+li a {
+  display: block;
+  color: #867979;
+  font-family: "Inter";
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 40px;
+  padding: 25px 25px;
+  text-decoration: none;
+}
+li.navigation a:hover{
+  color:#65c16a;
+  text-shadow: 3px 3px 5px #81c784;
+  background-color: #e2e2e2;
+  width: 0.4px;
+  height: 0.4px;
+  border-radius: 90%;
+  z-index: 1; 
+  
+}
+li#bot a button{
+    float: right;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Josefin Slab";
+    text-align: center;
+    margin-top: 0;
+    border-radius: 20px 0 0 20px;
+    width: 17%;
+    height: 40px;
+    border-color: inherit;
+    background: linear-gradient(to right,#81c784,#a7e57a);
+}
+section.hero_section{
+  display: block;
+  width: 100%;
+  margin: 20px;
+}
+.herodescription{
+  float: left;
+  width: 40%;
+}
+.herodescription h1{
+  margin-top: 10%;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-family: "Instrument Sans";
+  font-size: 30px;
+  background: linear-gradient(to right,#81c784,#a7e57a);
+  width: fit-content;
+}
+.herodescription h5{
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Josefin Slab";
+  font-size: 30px;
+  color:#4caf50;
+}
+.herodescription h2{
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: "Inder";
+}
+#makeBlue{
+  color: rgb(74, 74, 245);
+}
+.herodescription button{
+  padding: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color:white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:20px;
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px rgb(199, 191, 191);
+  border-radius: 15px;
+
+}
+.herodescription button:hover{
+  background-color:rgb(101, 193, 106);
+  color:black;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transform: scale(1) skew(20deg);
+  box-shadow: 5px 5px 5px 5px rgba(101, 193, 106,1);
+}
+.herophoto{
+  float: right;
+  width: 60%;
+}
+.herophoto img{
+  width: 90%;
+  margin-bottom: 10px;
+}
+section.about1{
+  display: block;
+  width: 100%;
+}
+section.about1 .aboutdescription{
+  margin-top:20px;
+  margin-right: 5px;
+  float: right;
+  width: 55%;
+}
+.aboutdescription h5{
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: "Josefin Slab";
+  text-align: center;
+  font-size: 30px;
+  color:#4caf50;
+}
+.aboutdescription h2{
+  margin: 10px 0 10px 20px;
+  font-size: 40px;
+  font-family: "Inder";
+}
+.aboutdescription p{
+  margin: 0 15px 20px 20px;
+  color: #a1b2b5;
+  font-size: 20px;
+}
+
+section.about1 .aboutusphoto>img{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 40%;
+  float: left;
+}
+.fa-solid, .socialmedia .fa-brands{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  background-color: #5ce063;
+  width: 70px;
+  height: 70px;
+  border-radius: 90%;
+}
+.aboutdescription .icons4{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.designing>i {
+  position:absolute;
+  top: 30px;
+  left:20px;
+}
+.designing p{
+  font-size: 20px;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  right: 55%;
+}
+.designing h2{
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-size: 30px;
+}
+.socialmedia>i{
+  position:absolute;
+  top: 30px;
+  left:45%;
+}
+.socialmedia p{
+  font-size: 20px;
+  position: absolute;
+  top: 80px;
+  left: 55%;
+  right: 75px;
+}
+.socialmedia h2{
+  position: absolute;
+  top: 30px;
+  left: 55%;
+  font-size: 30px;
+}
+.editing>i{
+  position:absolute;
+  top: 150px;
+  left:20px;
+}
+.editing p{
+  font-size: 20px;
+  position: absolute;
+  top: 200px;
+  left: 14%;
+  right: 55%;
+  
+}
+.editing h2{
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  font-size: 30px;
+}
+.marketing>i{
+  position:absolute;
+  top: 150px;
+  left:45%;
+}
+.marketing p{
+  font-size: 20px;
+  position: absolute;
+  top: 200px;
+  left:55%;
+}
+.marketing h2{
+  position: absolute;
+  top: 150px;
+  left:55%;
+  font-size: 30px;
+}
+section.about2{
+  margin-top: 90%;
+  margin-left: 20px;
+  display: block;
+  width: 100%;
+}
+.startups{
+  display: block;
+  float: left;
+  width: 50%;
+}
+.startupsPhoto{
+  position: relative;
+  float: right;
+  width:50%;
+}
+.aboutstartup1>.num, .aboutstartup2>.num ,.aboutstartup3>.num{
+  position: relative;
+  top: 60px;
+  font-size: 70px;
+  font-family: "Josefin Slab" ;
+  font-weight:bold;
+  color: #81c784;
+}
+.aboutstartup2 .content h4,.aboutstartup1 .content h4,.aboutstartup3 .content h4{
+  position: relative;
+  left:15%;
+  font-family: "Inder";
+  font-size: 40px;
+}
+.aboutstartup2 .content p,.aboutstartup1 .content p,.aboutstartup3 .content p{
+  position: relative;
+  top: 10px;
+  left:15%;
+  font-family: "Inter";
+  color: #9aa2a3;
+  font-style: italic;
+}
+.startupsPhoto>img{
+  width: 90%;
+  position: relative;
+  top:140px;
+  z-index: -1;
+  border-radius: 20%;
+}
+.products {
+  position: relative;
+  top: 220px;
+   right: 30px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 40px;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.products::-webkit-scrollbar {
+    height: 18px;
+}
+
+.products::-webkit-scrollbar-thumb {
+    background: rgb(111, 238, 149);
+    border-radius: 4px;
+}
+
+figure.product1,figure.product2,figure.product3{
+    flex: 0 0 auto;
+    width: 350px;
+    scroll-snap-align: start;
+    position: relative;
+    overflow: hidden;
+}
+
+figure.product1>img ,figure.product2>img,figure.product3>img {
+    width: 100%;
+    display: block;
+}
+
+figure.product1 figcaption,figure.product2 figcaption,figure.product3 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(212, 234, 237,1);
+    padding: 15px;
+    font-size: 16px;
+    font-family: "Inder";
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+dt{
+  font-family: "Josefin Slab";
+  font-weight: bold;
+  font-size: 20px;
+  color:#4caf50;
+}
+dd{
+  color: #a1b2b5;
+  font-size: 15px;
+  font-family: "Inter";
+}
+figure:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intro-text {
+    font-size: 20px;
+    font-weight: bold;
+    animation: fadeInText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0.6; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.1); }
+}
+
+section.faq{
+  margin-top: 23%;
+  margin-left: 10px;
+}
+section.faq h2{
+  padding: 10px;
+  font-family: "Inder";
+  font-size: 30px;
+}
+.faq ul{
+  list-style-type: none;
+  border-style: hidden;
+}
+.faq li {
+  border:2px ridge;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.betogether{
+  display: block;
+  width: 100%;
+}
+.questions{
+  float: left;
+  font-family: "Josefin Slab";
+  font-weight: bold;
+  font-size: 30px;
+}
+.btn{
+  float: right;
+  width: 20px;
+}
+.btn>button{
+  font-size: 30px;
+  font-family: "Josefin Slab";
+  background-color: white;
+  border-style: none;
+  margin-bottom: 35px;
+}
+.ans{
+  margin-top: 30px;
+  border:2px solid;
+  border-radius: 15px;
+  padding: 5px;
+  color: #85898a;
+  font-size: 15px;
+  font-family: "Inter";
+}
+div.teams{
+  margin:40px 5px 20px 20px;
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+}
+section.teams h3{
+  background: linear-gradient(to right,white,#81c784,#a7e57a,white);
+  border-radius: 20px;
+  width: 30%;
+  padding: 15px;
+  margin-left: 35%;
+  font-family: "Inder";
+  font-size: 25px;
+  text-align: center;
+}
+.team1 img{
+  margin-left: 70px;
+  border-radius: 50%;
+  width: 60%;
+  height: 30%;
+}
+.team2 img{
+  margin-left: 80px;
+  border-radius: 50%;
+  width: 65%;
+  height: 250px;
+}
+.team3 img{
+  margin-left: 80px;
+  border-radius: 50%;
+  width: 65%;
+  height: 250px;
+}
+figcaption{
+  margin-top: 50px;
+  margin-left: 20px;
+  line-height: 50px;
+}
+.team1 figcaption{
+  margin-top: 21%;
+}
+.team2 figcaption{
+  margin-top: 18%;
+}
+.team3 figcaption{
+  margin-top: 18%;
+}
+figcaption h2{
+  text-align: center;
+  font-family: "Inder";
+  font-size: 40px;
+}
+figcaption p{
+  text-align: center;
+  font-family: "Josefin Slab";
+  font-size: 30px;
+}
+.team_none{
+  background-color: #a1b2b5;
+
+}
+table{
+  margin: 8% 15px 10% 20px;
+  border-collapse: collapse;
+}
+th img#img1{
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 20%;
+  float: left;
+}
+th img#img2{
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 16%;
+  float: left;
+}
+th img#img3{
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 35%;
+  float: left;
+}
+tr>td{
+ padding: 17px;
+}
+th{
+  font-family: "Josefin Slab";
+  letter-spacing: 2px;
+  padding-top: 20px;
+  font-size: 30px;
+  color: white;
+}
+td:first-child, th:first-child {
+    background-color: #4caf50; 
+}
+tr:nth-child(3) td:first-child{
+  background-color: white;
+}
+tr:nth-child(2) td:not(#green){
+  background-color: #d9d9d9;
+  font-family: "Inder";
+  font-size: 18px;
+}
+td#green{
+  letter-spacing: 5px;
+  color: white;
+  font-family: "Inder";
+  text-align: center;
+}
+td>p{
+  font-family: "Inter";
+  color: #a1b2b5;
+  font-size: 15px;
+}
+section.testimonial{
+  margin: 30px 0 10px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 60px;
+}
+.test{
+  background-color: black;
+  padding: 30px;
+  border-radius: 30px;
+
+}
+q{
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+#testBiruk{
+  margin-top: 30px;
+  margin-left: 120px;
+  border-radius: 50%;
+  width: 30%;
+}
+#testSara{
+  margin-top: 30px;
+  margin-left: 120px;
+  border-radius: 50%;
+  width: 30%;
+  height: 100px;
+  
+}
+#testFenet{
+  margin-top: 60px;
+  margin-left: 120px;
+  border-radius: 50%;
+  width: 30%;
+  height: 100px;
+ 
+}
+.test h3{
+  margin-top: 10px;
+  font-family: "Inder";
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.test p{
+  margin-top: 10px;
+  color: white;
+  font-family: "Josefin Slob";
+  font-size: 17px;
+  text-align: center;
+}
+section.contact{
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 20px;
+
+}
+.getUs{
+  float: left;
+  width: 40%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.getUs h2{
+  font-family: "Inder";
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+.getUs div img{
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+  width: 10%;
+}
+.getUs div p{
+  position: relative;
+  left: 90px;
+  top: -50px;
+  font-family: "Josefin Slab";
+  font-size: 20px;
+  color:#4caf50;
+}
+.getUs #address,.getUs a{
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  position: relative;
+  left: 85px;
+  top: -35px;
+}
+.getUs a:hover{
+  color: #203354;
+  background: linear-gradient(to right,white,#81c784,#a7e57a,white);
+  transform: scale(1.1);
+}
+.getUs a:focus{
+  color: white;
+  background: linear-gradient(to right,rgb(247, 193, 193),#956afa,#c338fa,rgb(104, 34, 34));
+}
+.contactForm{
+  float: right;
+  width: 60%;
+  
+}
+.containerImage{
+  position: relative;
+}
+.containerImage>img{
+  position: relative;
+  top:20px;
+  right: 10px;
+  width: 95%;
+  height: 500px;
+  opacity: 0.5;
+}
+label[for="name"]{
+  position: relative;
+  top: -420px;
+  left: 20px;
+  color: #383838;
+  font-family: "Inter";
+  font-size: 18px;
+}
+input[type="text"] {
+  position: relative;
+  top: -380px;
+  left: -76px;
+  width: 40%;
+  border-radius: 30px;
+  padding: 10px;
+  border-style: none;
+  
+}
+label[for="email"]{
+  position: relative;
+  top: -320px;
+  left: -400px;
+  color: #383838;
+  font-family: "Inter";
+  font-size: 18px;
+}
+input[type="email"] {
+  position: relative;
+  top: -400px;
+  left: 20px;
+  width: 40%;
+  border-radius: 30px;
+  padding: 10px;
+  border-style: none;
+  
+}
+label[for="msg"]{
+  position: relative;
+  top: -340px;
+  left: -300px;
+  color: #383838;
+  font-family: "Inter";
+  font-size: 18px;
+}
+textarea {
+  position: relative;
+  top: -200px;
+  left: -380px;
+  width: 40%;
+  border-radius: 30px;
+  padding: 10px;
+  border-style: none;
+}
+input[type="button"]{
+  position: relative;
+  top: -160px;
+  left: -390px;
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 10px;
+  background: linear-gradient(to right,#81c784, #4caf50);
+  border-color: inherit;
+}
+footer{
+  margin: 0;
+  background-color: #D4EAED;
+}
+.gridfooter{
+  margin-top: 50%;
+  margin-left: 20px;
+}
+.footer>img{
+  margin-top: 70px;
+  width: 10%;
+  height: 10%;
+}
+.footer p{
+  margin: 20px 0 10px 0;
+  width: 40%;
+  font-family: "Inter";
+  color: #85898a;
+}
+i.fa-facebook, i.fa-github,i.fa-square-x-twitter,i.fa-whatsapp{
+  margin:10px 0 20px 40px;
+  font-size: 50px;
+  background-color:white;
+  color: #4caf50;
+}
+i.fa-facebook:hover{
+  color: blue;
+}
+i.fa-github:hover, i.fa-square-x-twitter:hover{
+  color:black;
+}
+i.fa-whatsapp:hover{
+  background-color: #4caf50;
+  color: #fff;
+}
+.USEFUL_LINKS,.MORE_LINKS{
+  position: relative;
+}
+.USEFUL_LINKS .p_higher{
+  position: absolute;
+  left: 640px;
+  top:-250px;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 15px;
+  color: #85898a;
+}
+.USEFUL_LINKS ul{
+  border-style: none;
+  position: absolute;
+  left: 610px;
+  top:-240px;
+}
+.footer_lists{
+  line-height: 45px;
+  font-size: 17px;
+  font-weight: 200;
+}
+.footer_lists:hover{
+  color: #81c784;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px #81c784;
+}
+.USEFUL_LINKS hr{
+  position: absolute;
+  left: 640px;
+  top:-220px;
+  width: 140px;
+}
+.MORE_LINKS .p_higher{
+  position: absolute;
+  left: 940px;
+  top:-250px;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 15px;
+  color: #85898a;
+}
+.MORE_LINKS ul{
+  border-style: none;
+  position: absolute;
+  left: 910px;
+  top:-240px;
+}
+.MORE_LINKS hr{
+  position: absolute;
+  left: 940px;
+  top:-220px;
+  width: 140px;
+}
+.rightsFooter{
+  position: relative;
+  top: 70px;
+  background-color: #2F9BA6;
+  width: 100%;
+  height: 80px;
+}
+.rightsFooter p{
+  position: relative;
+  top: 30px;
+  text-align: center;
+  color: #d9d9d9;
+  font-size: 16px;
+  font-family: "Josefin Slab";
+}
